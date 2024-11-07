@@ -1,0 +1,27 @@
+.menu
+{
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    margin:5px 90px;
+}
+.menu ul
+{ 
+    display:flex;
+    gap:20px;
+ 
+
+}
+ul li 
+{
+    display:flex;
+    
+    list-style: none;
+    font-size:20px;
+}
+.right-head
+{
+    display:flex;
+    gap:20px;
+    font-size:22px;
+}

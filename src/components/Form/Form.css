@@ -1,0 +1,100 @@
+.conta
+{
+    display:flex;
+    align-items:center;
+    margin-top:40px;
+    /* background-color: #100f0f; */
+    justify-content: center;
+}
+
+.form-input
+{
+    display:flex;
+    flex-direction:column;
+    /* height:60vh; */
+
+    align-items:center;
+    
+    justify-content:start;
+    /* width:600px; */
+    padding:80px;
+    border:1px solid white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.left-side,.right-side
+{
+    display:flex; 
+    flex-direction: column;
+
+}
+.left-side select,.right-side select
+{
+    width:250px;
+    background-color:transparent;
+    border:0.3px solid white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius:15px;
+    color:black;
+    
+    padding:10px;
+}
+.left-side select:focus, select:hover
+ {
+     background-color: white; 
+     border:none;
+     /* width:auto; */
+     transition:0.3s;
+}
+
+.container
+{
+    display: grid;
+    gap:50px;
+    justify-content: space-around;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.input-container {
+    position: relative;
+    color:#100f0f;
+  }
+  
+  
+  /* Ensure the container has proper styling */
+.selected-places {
+    margin-top: 20px; /* Add some margin if needed */
+    padding: 10px; 
+  }
+  
+  /* General input styling */
+  .selected-places input {
+    width: 100%; /* Ensure the input takes full width */
+    padding: 15px; /* Add some padding */
+    font-size: 16px; /* Set font size */
+    border:1px solid white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+.info-from-selection
+{
+    display:flex;
+    gap:50px;
+    margin-top:50px;
+
+}
+
+.date-departure
+{
+    display: flex;
+    flex-direction: column;
+    margin-top:30px;
+    /* justify-content:flex-start; */
+    align-items:center;
+}
+.date-departure input
+{
+    width:200px;
+    padding:6px;
+}
+
+  
