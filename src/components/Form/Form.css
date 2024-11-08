@@ -88,6 +88,7 @@
 .date-departure input
 {
     width:200px;
+    border-radius:8px;
     padding:6px;
 }
 
