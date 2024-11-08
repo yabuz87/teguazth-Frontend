@@ -3,7 +3,6 @@
     display:flex;
     align-items:center;
     margin-top:40px;
-    /* background-color: #100f0f; */
     justify-content: center;
 }
 
@@ -11,14 +10,11 @@
 {
     display:flex;
     flex-direction:column;
-    /* height:60vh; */
-
     align-items:center;
-    
     justify-content:start;
-    /* width:600px; */
     padding:80px;
     border:1px solid white;
+    border-radius:20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -31,19 +27,17 @@
 .left-side select,.right-side select
 {
     width:250px;
-    background-color:transparent;
+    background-color:white;
     border:0.3px solid white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     border-radius:15px;
-    color:black;
-    
+    color:black; 
     padding:10px;
 }
 .left-side select:focus, select:hover
  {
      background-color: white; 
      border:none;
-     /* width:auto; */
      transition:0.3s;
 }
 
@@ -59,6 +53,7 @@
     position: relative;
     color:#100f0f;
   }
+  
   
   
   /* Ensure the container has proper styling */
@@ -88,7 +83,6 @@
     display: flex;
     flex-direction: column;
     margin-top:30px;
-    /* justify-content:flex-start; */
     align-items:center;
 }
 .date-departure input

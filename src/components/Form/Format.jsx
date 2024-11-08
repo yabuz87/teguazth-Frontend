@@ -87,7 +87,7 @@ const Format = () => {
           </div>
         </div>
 
-        <button className="btn btn-primary" onClick={handleNextPage}>
+        <button className="btn m-4 p-2 btn-primary" onClick={handleNextPage}>
           Next <i className="bi bi-arrow-right-short"></i>
         </button>
       </div>
