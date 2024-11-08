@@ -1,11 +1,11 @@
 import React from 'react';
 import './Navbar.css';
-import {useState} from 'react'
+import {useState,useEffect} from 'react'
 import 'bootstrap-icons/font/bootstrap-icons.css';
-const Navbar = () => {
+const Navbar = ({ darkMode, setDarkMode}) => {
 
-  const [darkMode, setDarkMode] = useState(false);
-  const toggleTheme = () => { setDarkMode(!darkMode)};
+  
+  const toggleChange = () => { setDarkMode(!darkMode)};
   
   return (
     <div className="menu">
@@ -16,7 +16,8 @@ const Navbar = () => {
         <li>something</li>
       </ul>
       <div className="right-head">
-      <i  className="bi bi-moon" onClick={toggleTheme}></i>
+      <i  className="bi bi-moon" onClick={toggleChange}>
+      </i>
       <i className="bi bi-globe"></i>
       </div>
     </div>
