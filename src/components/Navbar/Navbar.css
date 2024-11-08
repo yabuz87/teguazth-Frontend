@@ -1,10 +1,19 @@
-.menu
-{
-    display:flex;
-    align-items:center;
+/* Navbar.css */
+.menu {
+    display: flex;
+    align-items: center;
     justify-content: space-between;
-    margin:5px 90px;
-}
+    margin: 0 50px;   /* Adjust the margins as needed */
+    position: fixed;  /* Fix the navbar to the top */
+    top: 0;           /* Align it to the top */
+    width: calc(100% - 180px);  /* Ensure it spans the correct width */
+    background-color: transparent;  /* Optional: Set a background color */
+    /* color: white; */
+    z-index: 1000;    /* Ensure it stays above other content */
+    padding:10px; 
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+  }
+  
 .menu ul
 { 
     display:flex;
