@@ -75,11 +75,11 @@ const Format = () => {
         <div className="info-from-selection">
           <div className="selected-places">
             <label>Location:</label>
-            <input type="text" value={init} onChange={(e)=>updateInit(e)} placeholder="Location" /> {/* Add readOnly to prevent manual edit */}
+            <input type="text" value={init} onChange={(e)=>updateInit(e)} placeholder="Location" />
           </div>
           <div className="selected-places">
             <label>Destination:</label>
-            <input type="text" value={destination} onChange={updateDestination} placeholder="Destination" /> {/* Add readOnly to prevent manual edit */}
+            <input type="text" value={destination} onChange={updateDestination} placeholder="Destination" />
           </div>
           <div className="selected-places">
             <label>Time appointed:</label>

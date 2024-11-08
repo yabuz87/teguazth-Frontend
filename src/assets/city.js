@@ -11,3 +11,7 @@
     {name:"mekele"},
     {name:"konta"},
 ]
+ export function sortArray()
+{
+
+}
