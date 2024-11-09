@@ -10,10 +10,14 @@ const Available = () => {
    {
     navigate("/fillForm")
    }
+   function handleBackpage()
+   {
+    navigate("/")
+   }
   return (
   
     <div className="available-bus">
-      <div>
+      <div >
         <h1>Available Buses</h1>
          <div className="available-container">
          {
@@ -32,15 +36,13 @@ const Available = () => {
 
          </div>
 
+  <div className="NavigationButton">
+    <button className="prev-btn" onClick={handleBackpage}>Prevoius</button>
+    <button className="next-btn" onClick={handleNextPage}>Next</button>
+
+  </div>
       </div>
 
-      <div className="Bus-container">
-      {/* <div>
-        <img src{}>
-
-        </img>
-      </div> */}
-      </div>
     
     </div>
   )
