@@ -2,7 +2,6 @@ import React, { useContext,useState} from 'react';
 import { AppContext, AppProvider } from '../Context.jsx';
 import {city} from '../../assets/city.js'; // Correct import for default export
 import './Form.css';
-
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useNavigate } from 'react-router-dom';
 import 'bootstrap-icons/font/bootstrap-icons.css';

@@ -28,6 +28,7 @@ h1{
 }
 .available-bus-card{
     line-height:15px;
+    cursor:pointer;
 }
 .available-bus-card img
 {
@@ -40,6 +41,7 @@ h1{
     gap:50px;
     
 }
+
 .NavigationButton button
 {
     padding:10px;

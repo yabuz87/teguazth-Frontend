@@ -1,4 +1,5 @@
 import React,{useContext} from 'react'
+import 'bootstrap-icons/font/bootstrap-icons.css';
 import {busObj }from "../../assets/availableList.js"
 import { AppContext,AppProvider } from '../Context'
 import  "./AvailableBus.css"
@@ -22,7 +23,7 @@ const Available = () => {
          <div className="available-container">
          {
     busObj.map((bus, index) => (
-    <div key={index} className="available-bus-card">
+    <div key={index} className="available-bus-card" onClick={handleNextPage}>
       <div className="busImg-div"><img src={bus.img} alt={`${bus.name}`} /></div>
       <div><p>Name: {bus.name}</p>
       <p>Plate Number: {bus.plate_no}</p>
@@ -37,8 +38,8 @@ const Available = () => {
          </div>
 
   <div className="NavigationButton">
-    <button className="prev-btn" onClick={handleBackpage}>Prevoius</button>
-    <button className="next-btn" onClick={handleNextPage}>Next</button>
+    <button className="prev-btn" onClick={handleBackpage}><i className="bi bi-arrow-left-short"></i>Prevoius</button>
+    {/* <button className="next-btn" onClick={handleNextPage}>Next</button> */}
 
   </div>
       </div>
