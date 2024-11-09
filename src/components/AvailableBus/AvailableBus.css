@@ -1,0 +1,32 @@
+.available-bus
+{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    margin-top:30px;
+}
+.available-container
+{
+        display:flex;
+        flex-direction:row;
+        flex-wrap: wrap;
+        gap:10px;
+}
+.available-bus-card
+{
+    border:0.5px solid white;
+    padding:20px;
+    gap:20px;
+    justify-content: space-around;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    align-items:center;
+}
+.available-bus-card{
+    line-height:15px;
+}
+.available-bus-card img
+{
+    width:200px;
+}
