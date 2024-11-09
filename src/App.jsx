@@ -1,8 +1,10 @@
+// import React, { useEffect, useState } from 'react';
 import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar';
 import Available from './components/AvailableBus/Available';
 import Format from './components/Form/Format';
+import { AppProvider } from './components/Context'; // Ensure correct import path
 import './App.css';
 
 function App() {
@@ -20,15 +22,17 @@ function App() {
   }, [darkMode]);
 
   return (
-    <div className={darkMode ? "dark-mode" : "light-mode"} style={{ minHeight: '100vh' }}>
-      <Router>
-        <Navbar darkMode={darkMode} setDarkMode={setDarkMode}/>
-        <Routes>
-          <Route path="/" element={<Format />} /> {/* Home route */}
-          <Route path="/avail" element={<Available />} /> {/* Available route */}
-        </Routes>
-      </Router>
-    </div>
+    <AppProvider>
+      <div className={darkMode ? "dark-mode" : "light-mode"} style={{ minHeight: '100vh' }}>
+        <Router>
+          <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
+          <Routes>
+            <Route path="/" element={<Format />} /> {/* Home route */}
+            <Route path="/avail" element={<Available />} /> {/* Available route */}
+          </Routes>
+        </Router>
+      </div>
+    </AppProvider>
   );
 }
 

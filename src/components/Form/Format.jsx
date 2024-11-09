@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useContext,useState} from 'react';
+import { AppContext, AppProvider } from '../Context.jsx';
 import {city} from '../../assets/city.js'; // Correct import for default export
 import './Form.css';
 
@@ -7,6 +8,7 @@ import { useNavigate } from 'react-router-dom';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
 const Format = () => {
+  const{init,setInit,timeD,setTime,destination,setDestination}=useContext(AppContext);
   const navigate = useNavigate(); // Correctly initialize useNavigate inside the component
 
   const handleNextPage = () => {
@@ -26,9 +28,9 @@ const Format = () => {
     }
   };
 
-  const [init, setInit] = useState("");
-  const [timeD, setTime] = useState();
-  const [destination, setDestination] = useState(""); // Initialize with an empty string
+  // const [init, setInit] = useState("");
+  // const [timeD, setTime] = useState();
+  // const [destination, setDestination] = useState(""); // Initialize with an empty string
 
   const updateInit = (e) => {
     setInit(e.target.value);
