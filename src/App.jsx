@@ -5,6 +5,7 @@ import Navbar from './components/Navbar/Navbar';
 import Available from './components/AvailableBus/Available';
 import Format from './components/Form/Format';
 import { AppProvider } from './components/Context'; // Ensure correct import path
+import FillForm from "./components/FillForm/FillForm"
 import './App.css';
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Format />} /> {/* Home route */}
             <Route path="/avail" element={<Available />} /> {/* Available route */}
+            <Route path="/fillForm" element={<FillForm/>}
           </Routes>
         </Router>
       </div>
