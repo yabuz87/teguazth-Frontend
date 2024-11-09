@@ -7,7 +7,7 @@ import { useNavigate } from 'react-router-dom';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
 const Format = () => {
-  const{init,setInit,timeD,setTime,destination,setDestination}=useContext(AppContext);
+  const {init,setInit,timeD,setTime,destination,setDestination}=useContext(AppContext);
   const navigate = useNavigate(); // Correctly initialize useNavigate inside the component
 
   const handleNextPage = () => {
@@ -31,15 +31,15 @@ const Format = () => {
   // const [timeD, setTime] = useState();
   // const [destination, setDestination] = useState(""); // Initialize with an empty string
 
-  const updateInit = (e) => {
+  const handleInit = (e) => {
     setInit(e.target.value);
   };
 
-  const updateTime = (e) => {
+  const handletime = (e) => {
     setTime(e.target.value);
   };
 
-  const updateDestination = (e) => {
+  const handleDestination = (e) => {
     setDestination(e.target.value);
   };
 
@@ -51,7 +51,7 @@ const Format = () => {
         <div className="container">
           <div className="left-side">
             <div>from</div>
-            <select onChange={updateInit}>
+            <select onChange={(e)=>handleInit(e)}>
               <option value="">Select city</option> {/* Add value attribute to option */}
               {city.map((item, index) => (
                 <option key={index} value={item.name}>{item.name}</option>
@@ -60,7 +60,7 @@ const Format = () => {
           </div>
           <div className="right-side">
             <div>to</div>
-            <select onChange={updateDestination}>
+            <select onChange={(e)=>handleDestination(e)}>
               <option value="">Select city</option> {/* Add value attribute to option */}
               {city.map((item, index) => (
                 <option key={index} value={item.name}>{item.name}</option>
@@ -69,18 +69,18 @@ const Format = () => {
           </div>
           <div className="date-departure">
             <label> Departure Date:</label>
-            <input type="date" value={timeD} onChange={updateTime}></input>
+            <input type="date" value={timeD} onChange={(e)=>handletime(e)}></input>
           </div>
         </div>
 
         <div className="info-from-selection">
           <div className="selected-places">
             <label>Location:</label>
-            <input type="text" value={init} onChange={(e)=>updateInit(e)} placeholder="Location" />
+            <input type="text" value={init} onChange={(e)=>handleInit(e)} placeholder="Location" />
           </div>
           <div className="selected-places">
             <label>Destination:</label>
-            <input type="text" value={destination} onChange={updateDestination} placeholder="Destination" />
+            <input type="text" value={destination} onChange={(e)=>handleDestination(e)} placeholder="Destination" />
           </div>
           <div className="selected-places">
             <label>Time appointed:</label>
