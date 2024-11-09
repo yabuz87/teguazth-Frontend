@@ -5,22 +5,9 @@ import dream from './dream.png';
 
 export const busObj = [
     {
-        name:"Walia Bus",
-        img: awash,
-        showferName:"Adugna Bogale",
-        plate_no: "B11223"
-    },
-    {
-        name: "Walia Bus",
-        img: awash,
-        showferName:"fikre Bogale",
-        plate_no: "B11223"
-    },
-    {
-        name: "Walia Bus",
-        showferName:"melaku amare",
-        img: awash,
-        plate_no: "B11223"
+        name: "Ethio Bus",
+        img: zemen,
+        plate_no: "B11255"
     },
     {
         name: "Walia Bus",
@@ -28,14 +15,9 @@ export const busObj = [
         plate_no: "B11223"
     },
     {
-        name: "Walia Bus",
-        img: awash,
-        plate_no: "B11223"
-    },
-    {
-        name: "Walia Bus",
-        img: awash,
-        plate_no: "B11223"
+        name: "Dream Bus",
+        img: dream,
+        plate_no: "B11256"
     },
     {
         name: "Zemen Bus",

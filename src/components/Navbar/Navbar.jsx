@@ -15,7 +15,7 @@ function Navbar({darkMode, setDarkMode}) {
         <li>something</li>
       </ul>
       <div className="right-head">
-        <i className="bi bi-moon" onClick={toggleChange}>
+        <i className="bi bi-moon dark-icon" onClick={toggleChange}>
         </i>
         <i className="bi bi-globe"></i>
       </div>

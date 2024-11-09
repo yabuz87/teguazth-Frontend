@@ -1,5 +1,5 @@
 import React,{useContext} from 'react'
-import {busObj }from "../../assets/availableListjs"
+import {busObj }from "../../assets/availableList.js"
 import { AppContext,AppProvider } from '../Context'
 import  "./AvailableBus.css"
 import { useNavigate } from 'react-router-dom';
