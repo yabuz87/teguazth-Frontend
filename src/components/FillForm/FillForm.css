@@ -1,0 +1,27 @@
+.FillForm-container
+{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    align-items:center;
+    margin-top:30px;
+
+
+}
+
+.left-side img
+{
+   width:500px;
+
+
+}
+.left-side h1
+{
+    font-weight: 700;
+}
+.right-side
+{
+    width:500px;
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+}
