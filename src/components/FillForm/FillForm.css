@@ -2,21 +2,25 @@
 {
     display:grid;
     grid-template-columns:1fr 1fr;
-    align-items:center;
-    margin-top:30px;
-
-
+    align-items:top;
+    gap:20px;
+    margin-top:80px;
+    margin-right:20px;
+    margin-left:20px;
 }
 
 .left-side img
 {
    width:500px;
-
-
 }
 .left-side h1
 {
     font-weight: 700;
+    margin-bottom:50px;
+}
+.left-sode p{
+    width:100px;
+    text-wrap: wrap;
 }
 .right-side
 {
@@ -24,4 +28,23 @@
     display:flex;
     flex-direction: column;
     gap:10px;
+}
+.back-navigation
+{
+    display:flex;
+    justify-content: center;
+    gap:50px;
+}
+.submit-btn:hover
+{
+    border-style:rgb(18, 133, 215);
+}
+.back-navigation button, .submit-btn
+{
+    padding:10px;
+    width:150px;
+    border:1px solid white;
+    font-weight:600;
+    font-size:20px;
+    border-radius: 20px;
 }

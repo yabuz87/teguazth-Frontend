@@ -45,7 +45,7 @@ const Available = () => {
           ))}
         </div>
         <div className="NavigationButton">
-          <button className="prev-btn" onClick={handleBackpage}><i className="bi bi-arrow-left-short"></i>Previous</button>
+          <button className="prev-btn" onClick={handleBackpage}><i className="bi bi-arrow-left-short"></i>Back</button>
         </div>
       </div>
     </div>

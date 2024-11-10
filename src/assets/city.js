@@ -8,7 +8,7 @@
     {name:"Gonder"},
     {name:"Welkite"},
     {name:"Nekemt"},
-    {name:"DireDawa"}
+    {name:"DireDawa"},
     {name:"mekele"},
     {name:"konta"},
 ]
