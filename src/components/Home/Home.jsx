@@ -43,7 +43,7 @@ const Home = () => {
   return (
     <div className="main-container">
       <div className="form-input">
-        <h1>Where do you wanna go?</h1>
+        <h1>Book Now!</h1>
 
         <div className="container">
           <div className="left-side">
@@ -85,59 +85,12 @@ const Home = () => {
           </div>
         </div>
 
-        <button className="btn m-4 p-2 btn-primary">
+        <button className="next-btn">
           Next <i className="bi bi-arrow-right-short"></i>
         </button>
       </div>
-      <div className="testimonial-section">
-        <h1>Hello this one is the testimonial part</h1>
-        <div className="testimonial-container">
-        <div className="customer">
-          <div>
-          <i className="bi bi-person fs-5"></i>
-          </div>
-          <div>
-            <p>name some one</p>
-            <div>i have many journey and i chose this app b/c it has a lot of easy and fast applicaplities</div>
-          </div>
-        </div>
-        <div className="customer">
-          <div>
-          <i className="bi bi-person fs-5"></i>
-          </div>
-          <div>
-            <p>name some one</p>
-            <div>i have many journey and i chose this app b/c it has a lot of easy and fast applicaplities</div>
-          </div>
-        </div>
-        <div className="customer">
-          <div>
-          <i className="bi bi-person fs-5"></i>
-          </div>
-          <div>
-            <p>name some one</p>
-            <div>i have many journey and i chose this app b/c it has a lot of easy and fast applicaplities</div>
-          </div>
-        </div>
-        <div className="customer">
-          <div>
-          <i className="bi bi-person fs-5"></i>
-          </div>
-          <div>
-            <p>name some one</p>
-            <div>i have many journey and i chose this app b/c it has a lot of easy and fast applicaplities</div>
-          </div>
-        </div>
-        <div className="customer">
-          <div>
-          <i className="bi bi-person fs-5"></i>
-          </div>
-          <div>
-            <p>name some one</p>
-            <div>i have many journey and i chose this app b/c it has a lot of easy and fast applicaplities</div>
-          </div>
-        </div>
-        </div>
+      <div className="right-section">
+        <h1>this is the right section</h1>
       </div>
     </div>
   );

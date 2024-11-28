@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Navbar from './components/Navbar/Navbar';
-import Available from './components/AvailableBus/Available';
 import Home from './components/Home/Home';
 import { AppProvider } from './components/Context'; // Ensure correct import path
-import FillForm from "./components/FillForm/FillForm";
 import './App.css';
 
 function App() {
@@ -25,8 +23,6 @@ function App() {
             <div className={darkMode ? "dark-mode" : "light-mode"} style={{ minHeight: '100vh' }}>
                 <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
                 <Home />
-                <Available />
-                <FillForm />
             </div>
         </AppProvider>
     );

@@ -1,29 +1,17 @@
 import React, { useContext } from 'react';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import { busObj } from "../../assets/availableList.js";
-import { AppContext } from '../Context';
+import { AppContext } from '../Context.jsx';
 import "./AvailableBus.css";
-//import { useNavigate } from 'react-router-dom';
-
 const Available = () => {
-  //const navigate = useNavigate();
+
   const { init, timeD, destination, setBusId } = useContext(AppContext);
 
   function handleBusId(e) {
     setBusId(e);
   }
-
-  // function handleNextPage() {
-  //   navigate("/fillForm");
-  // }
-
-  // function handleBackpage() {
-  //   navigate("/");
-  // }
-
   function callTwoFunctions(e) {
     handleBusId(e);
-    // handleNextPage();
   }
 
   return (

@@ -3,7 +3,7 @@ html, body {
     height: 100%;
     margin:25px 0px 0px 0px;
     padding: 0;
-    background-color: white;
+    /* background: linear-gradient(rgb(74, 163, 177), rgb(236, 176, 64) 90%); */
     color: black;
     transition: background-color 0.3s, color 0.3s; /* Smooth transition */
   }

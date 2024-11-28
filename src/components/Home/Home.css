@@ -1,23 +1,25 @@
 .main-container
 {
-    display:flex;
-    flex-direction: column;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
     align-items:center;
-    margin-top:40px;
+    margin-top:80px;
     justify-content: center;
 }
 
 .form-input
 {
     display:flex;
-    
+    position:relative;
+    background: linear-gradient(rgb(74, 163, 177), rgb(236, 176, 64) 90%);
     flex-direction:column;
     align-items:center;
     justify-content:start;
-    padding:80px;
+    margin-left:20px;
+    padding:30px;
     border:1px solid white;
     border-radius:20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px 2px rgba(0, 0, 0, 0.3);
 }
 
 .left-side,.right-side
@@ -28,7 +30,7 @@
 }
 .left-side select,.right-side select
 {
-    width:250px;
+    /* width:250px; */
     background-color:white;
     border:0.3px solid white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
@@ -46,7 +48,7 @@
 .container
 {
     display: grid;
-    gap:50px;
+    gap:20px;
     justify-content: space-around;
     align-items: center;
     grid-template-columns: 1fr 1fr 1fr;
@@ -95,31 +97,26 @@
     border:1px solid white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
-.testimonial-section{
-    display:flex;
-    flex-direction: column;
+.right-section{
+    /* width:500px; */
 }
-.testimonial-container{
-    display:grid;
-    gap:10px;
-    margin:3px;
-    grid-template-columns: 1fr 1fr 1fr;
-    padding:5px;
-    /* box-shadow: 0 4px 8px 1px rgba(0, 0, 0, 0.4); */
-    
+.next-btn
+{
+    width:100px;
+    padding:7px 12px;
+    font-size: 18px;
+    border-radius: 20px;
+    border:none;
+    background-color:rgb(154, 109, 197);
+    color:white;
+    cursor:pointer;
+    transition: 0.3s;
 }
-.customer{
-    display:flex;
-    border-radius: 10px;
-    flex-direction: column;
-    align-items: center;
-    padding:10px;
-    justify-content: center;
-    /* background-color: #f0f0f0; */
-    border:1px solid white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+.next-btn:hover{
+    transform:scale(1.04);
+    transition: 0.3s;
+}
 
-}
 
 
   
