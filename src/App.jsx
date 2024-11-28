@@ -4,6 +4,7 @@ import Home from './components/Home/Home';
 import { AppProvider } from './components/Context'; // Ensure correct import path
 import './App.css';
 import Footer from './components/footer/Footer';
+import Carousel from "./components/Partner/Carousel";
 
 function App() {
     const [darkMode, setDarkMode] = useState(false);
@@ -24,6 +25,7 @@ function App() {
             <div className={darkMode ? "dark-mode" : "light-mode"} style={{ minHeight: '100vh' }}>
                 <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
                 <Home />
+                <Carousel/>
                 <Footer/>
             </div>
         </AppProvider>
