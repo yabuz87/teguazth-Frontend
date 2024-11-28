@@ -4,6 +4,7 @@
     grid-template-columns: 1fr 1fr;
     align-items:center;
     margin-top:80px;
+    gap:20px;
     justify-content: center;
 }
 

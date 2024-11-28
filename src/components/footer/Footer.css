@@ -1,0 +1,28 @@
+
+.contact{
+    display:flex;
+    flex-direction: column;
+}
+.footer{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    margin-top:5px;
+    gap:30px;
+    margin-bottom:0px;
+}
+.social-medias{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    gap:30px;
+}
+.social-medias p{
+    font-size: 20px;
+    cursor: pointer;
+    transition:0.3s;
+}
+.social-medias p:hover{
+    transform: scale(1.04);
+    transition:0.3s;  
+}
