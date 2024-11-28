@@ -7,8 +7,8 @@
     margin: 0 50px;   /* Adjust the margins as needed */
     position: fixed;  /* Fix the navbar to the top */
     top: 0;           /* Align it to the top */
-    width: calc(100% - 180px);  /* Ensure it spans the correct width */
-      /* Optional: Set a background color */
+    width: calc(100% - 180px); 
+    background-color: rgb(42, 42, 31);
     /* color: white; */
     z-index: 1000;    /* Ensure it stays above other content */
     padding:10px; 

@@ -3,27 +3,27 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import { busObj } from "../../assets/availableList.js";
 import { AppContext } from '../Context';
 import "./AvailableBus.css";
-import { useNavigate } from 'react-router-dom';
+//import { useNavigate } from 'react-router-dom';
 
 const Available = () => {
-  const navigate = useNavigate();
+  //const navigate = useNavigate();
   const { init, timeD, destination, setBusId } = useContext(AppContext);
 
   function handleBusId(e) {
     setBusId(e);
   }
 
-  function handleNextPage() {
-    navigate("/fillForm");
-  }
+  // function handleNextPage() {
+  //   navigate("/fillForm");
+  // }
 
-  function handleBackpage() {
-    navigate("/");
-  }
+  // function handleBackpage() {
+  //   navigate("/");
+  // }
 
   function callTwoFunctions(e) {
     handleBusId(e);
-    handleNextPage();
+    // handleNextPage();
   }
 
   return (
@@ -45,7 +45,7 @@ const Available = () => {
           ))}
         </div>
         <div className="NavigationButton">
-          <button className="prev-btn" onClick={handleBackpage}><i className="bi bi-arrow-left-short"></i>Back</button>
+          <button className="prev-btn"><i className="bi bi-arrow-left-short"></i>Back</button>
         </div>
       </div>
     </div>

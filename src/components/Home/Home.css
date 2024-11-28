@@ -1,6 +1,7 @@
-.conta
+.main-container
 {
     display:flex;
+    flex-direction: column;
     align-items:center;
     margin-top:40px;
     justify-content: center;
@@ -9,6 +10,7 @@
 .form-input
 {
     display:flex;
+    
     flex-direction:column;
     align-items:center;
     justify-content:start;
@@ -93,5 +95,31 @@
     border:1px solid white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
+.testimonial-section{
+    display:flex;
+    flex-direction: column;
+}
+.testimonial-container{
+    display:grid;
+    gap:10px;
+    margin:3px;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding:5px;
+    /* box-shadow: 0 4px 8px 1px rgba(0, 0, 0, 0.4); */
+    
+}
+.customer{
+    display:flex;
+    border-radius: 10px;
+    flex-direction: column;
+    align-items: center;
+    padding:10px;
+    justify-content: center;
+    /* background-color: #f0f0f0; */
+    border:1px solid white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+
+}
+
 
   
