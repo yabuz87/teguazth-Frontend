@@ -9,7 +9,7 @@ const Carousel = () => {
             <div className="carousel-wrapper">
                 {busObject.map((content, index) => (
                     <div key={index} className="card">
-                        <div className="bus-img">{content.img}</div>
+                        <div className="bus-img"><img className="" src={content.img}/></div>
                         <p className="text-center">{content.name}</p>
                     </div>
                 ))}

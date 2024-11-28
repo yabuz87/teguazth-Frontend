@@ -18,7 +18,7 @@
 }
 
 .card {
-    width: 180px;
+    width: 200px;
     height: 150px;
     margin-right: 10px;
     background-color:white;
@@ -28,9 +28,12 @@
     align-items: center;
 }
 .bus-img{
-    width: 100%;
+    width:120px;
+    /* border-radius: 30px; */
 }
-
+.bus-img img{
+    width:100%;
+}
 @keyframes move {
     0% {
         transform: translateX(100%);

@@ -21,8 +21,7 @@ function Footer() {
         <p>Copyright 2024</p>
         <p>Terms and privacy</p>
         <p>all rights reserved to torpa computer science team 2015EC</p>
-        <p>Developed by <a href="https://www.linkedin.com/in/abhis
-        hekshekhra/">Abhishek Shekhara</a></p>
+        <p>Developed by <a href="https://github.com/yabuz87/teguazth-Frontend">Torpa plc</a></p>
         
       </div>
     </div>

@@ -1,33 +1,12 @@
 import React, { useContext,useState} from 'react';
 import { AppContext, AppProvider } from '../Context.jsx';
-import {city} from '../../assets/city.js'; // Correct import for default export
+import {city} from '../../assets/city.js';
 import './Home.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-//import { useNavigate } from 'react-router-dom';
 import 'bootstrap-icons/font/bootstrap-icons.css';
-// import {testimonialObj} from "../../assets/testimonial";
-
+import busImage from "../../assets/busimg.jpg";
 const Home = () => {
   const {init,setInit,timeD,setTime,destination,setDestination}=useContext(AppContext);
- // const navigate = useNavigate(); // Correctly initialize useNavigate inside the component
-
-  // const handleNextPage = () => {
-  //   if (init === "" || destination === "") {
-  //     alert("Please enter the Location and Destination");
-  //   }
-  //   else if(timeD==="")
-  //   {
-  //     alert("Please enter the Time");
-  //   }
-  //   else if
-  //   (init === destination) {
-  //     alert("Please enter different Location and Destination");
-  //   }
-  //    else {
-  //     navigate('/avail');
-  //   }
-  // };
-
   const handleInit = (e) => {
     setInit(e.target.value);
   };
@@ -90,7 +69,8 @@ const Home = () => {
         </button>
       </div>
       <div className="right-section">
-        <h1>this is the right section</h1>
+        {/* <h1>this is the right section</h1> */}
+        <img className="img-fluid img-right-side" src={busImage}/>
       </div>
     </div>
   );
