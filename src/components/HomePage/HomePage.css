@@ -1,0 +1,9 @@
+.homepage-conainer{
+    margin:20px 30px;
+}
+@media(max-width:768px)
+{
+    .homepage-conainer{
+        margin:10px 50px;
+    }
+}

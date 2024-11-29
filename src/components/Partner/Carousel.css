@@ -27,6 +27,12 @@
     justify-content: center;
     align-items: center;
 }
+.card p{
+    font-weight: 700;
+    background: linear-gradient(rgb(10, 192, 220), rgb(134, 72, 5) 90%);
+    -webkit-background-clip: text;
+    color:transparent;
+}
 .bus-img{
     width:120px;
     /* border-radius: 30px; */

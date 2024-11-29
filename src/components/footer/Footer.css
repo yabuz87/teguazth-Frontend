@@ -18,7 +18,7 @@
     gap:30px;
 }
 .social-medias p{
-    font-size: 23px;
+    font-size: 25px;
     cursor: pointer;
     transition:0.3s;
 }
@@ -27,7 +27,7 @@
     transition:0.3s;  
     background: linear-gradient(rgb(74, 163, 177), rgb(236, 176, 64) 90%);
     -webkit-background-clip: text;
-color: transparent;
+     color: transparent;
 
 }
 @media(max-width:768px)

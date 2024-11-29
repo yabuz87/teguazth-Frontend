@@ -2,8 +2,8 @@ import React, { useContext } from 'react';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import { busObj } from "../../assets/availableList.js";
 import { AppContext } from '../Context.jsx';
-import "./AvailableBus.css";
-const Available = () => {
+import "./BusList.css";
+const BusList = () => {
 
   const { init, timeD, destination, setBusId } = useContext(AppContext);
 
@@ -40,4 +40,4 @@ const Available = () => {
   );
 }
 
-export default Available;
+export default BusList;

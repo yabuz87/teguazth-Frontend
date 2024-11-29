@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from 'react';
-import Navbar from './components/Navbar/Navbar';
-import Home from './components/Home/Home';
-import { AppProvider } from './components/Context'; // Ensure correct import path
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import './App.css';
-import Footer from './components/footer/Footer';
-import Carousel from "./components/Partner/Carousel";
+import BusList from './components/BuseList/BusList';
+import { AppProvider } from './components/Context'; // Ensure correct import path
+import FillForm from './components/FillForm/FillForm';
+import HomePage from './components/HomePage/HomePage';
+import Navbar from './components/Navbar/Navbar';
 
 function App() {
     const [darkMode, setDarkMode] = useState(false);
@@ -22,12 +23,18 @@ function App() {
 
     return (
         <AppProvider>
+        {/* <Router> */}
             <div className={darkMode ? "dark-mode" : "light-mode"} style={{ minHeight: '100vh' }}>
                 <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
-                <Home />
-                <Carousel/>
-                <Footer/>
+                <HomePage/>
+                {/* <Routes>
+                    <Route path="/" element={<HomePage/>}/>
+                    <Route path="/avail" element={<BusList/>}/>
+                    <Route path="/fill" element={<FillForm/>}/>
+                </Routes> */}
+                
             </div>
+            {/* </Router> */}
         </AppProvider>
     );
 }

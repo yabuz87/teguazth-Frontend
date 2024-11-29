@@ -26,6 +26,7 @@
 .left-side,.right-side,.date-departure
 {
     display:flex; 
+    justify-content:flex-start;
     flex-direction: column;
 
 }
@@ -106,9 +107,7 @@
     border:1px solid white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
-.right-section{
-    /* width:500px; */
-}
+
 .next-btn
 {
     width:100px;
@@ -137,13 +136,20 @@
         display:flex;
         flex-direction: column;
     }
+    .form-input{
+        display:flex;
+        /* flex-wrap: wrap; */
+    }
     .main-container
     {
-       display:flex; 
-       
+       display:flex;  
        padding:30px;
        margin:70px 20px;
 
+    }
+    .right-side{
+        display:flex;
+        flex-direction: column;
     }
     .info-from-selection{
         display:flex;
