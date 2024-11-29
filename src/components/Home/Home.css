@@ -59,7 +59,7 @@
     display: grid;
     gap:20px;
     justify-content: space-around;
-    align-items: center;
+    align-items: start;
     grid-template-columns: 1fr 1fr 1fr;
 }
 .input-container {
@@ -95,8 +95,8 @@
 {
     display: flex;
     flex-direction: column;
-    margin-top:30px;
-    align-items:center;
+    /* margin-top:30px; */
+    align-items:start;
 }
 .date-departure input
 {
@@ -126,6 +126,31 @@
     transition: 0.3s;
 }
 
+
+@media(max-width:768px)
+{
+    .img-right-side{
+        display:none;
+    
+    }
+    .container{
+        display:flex;
+        flex-direction: column;
+    }
+    .main-container
+    {
+       display:flex; 
+       
+       padding:30px;
+       margin:70px 20px;
+
+    }
+    .info-from-selection{
+        display:flex;
+        flex-direction: column;
+        gap:10px;
+    }
+}
 
 
   

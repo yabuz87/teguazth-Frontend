@@ -48,3 +48,21 @@ ul li
     gap:20px;
     font-size:22px;
 }
+
+.menu-open-icon{
+  width:50px;
+  color:black;
+  display:none;
+}
+@media(max-width:768px)
+{
+  .menu ul{
+    display: none;
+  }
+  .menu-open-icon{
+    display:block;
+  }
+  .right-head{
+    display:none;
+  }
+}
