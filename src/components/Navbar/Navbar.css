@@ -50,17 +50,53 @@ ul li
 }
 
 .menu-open-icon{
-  width:50px;
+  width:30px;
   color:black;
   display:none;
+}
+.menu-close-icon{
+  display: none;
+  color:black;
+  width:30px;
 }
 @media(max-width:768px)
 {
   .menu ul{
-    display: none;
+      position:fixed;
+      background-color:whitesmoke;
+      margin-top:80px;
+      flex-direction:column;
+      align-items:start;
+      top:0;
+      right:-320px;
+      gap:30px;
+      width:200px;
+      height:100%;
+      transition:right 0.3s;
+      z-index:2;
+  }
+  li
+  {
+      font-size:30px;
+      padding-left:100px;
+      flex-direction:row;
+      color:black;
+      gap:20px;
+      
   }
   .menu-open-icon{
     display:block;
+    position:relative;
+    right:-30px;
+    cursor:pointer;
+  }
+  .menu-close-icon
+  {
+      display:block;
+      position:relative;
+      top:30px;
+      left:2px;
+      width:20px;
   }
   .right-head{
     display:none;

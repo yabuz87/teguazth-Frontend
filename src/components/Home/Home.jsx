@@ -87,7 +87,8 @@ const Home = () => {
       </div>
       <div className="right-section">
         {/* <h1>this is the right section</h1> */}
-        <img className="img-fluid img-right-side" src={busImage}/>
+        <h1>ticketing website</h1>
+        <p>in which you can get any Bus Ticket you want to make your journey</p>
       </div>
     </div>
   );
