@@ -1,17 +1,17 @@
 import React, { useContext } from 'react';
 import { AppContext } from '../Context';
-//import { useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { busObj } from '../../assets/availableList.js';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import { Fermatas } from "../../assets/fermatas"; // Ensure correct import
 import './FillForm.css';
 
 const FillForm = () => {
-  //const navigate=useNavigate();
-  // function handleNavigate()
-  // {
-  //   navigate("/avail");
-  // }
+  const navigate=useNavigate();
+  function backHandler()
+  {
+    navigate("/avail");
+  }
   const {init, timeD, destination, busId } = useContext(AppContext);
 
   // Find the selected bus based on busId
@@ -47,7 +47,7 @@ const FillForm = () => {
         <button className="submit-btn">Submit</button>
       </div>
       <div className="back-navigation">
-       <button className="back-btn"><i className="bi bi-arrow-left-short"></i>Back</button>
+       <button className="back-btn" onClick={backHandler}><i className="bi bi-arrow-left-short"></i>Back</button>
       </div>
     </div>
   );

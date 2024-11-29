@@ -1,17 +1,26 @@
 import React, { useContext } from 'react';
 import 'bootstrap-icons/font/bootstrap-icons.css';
+import { useNavigate } from 'react-router-dom';
 import { busObj } from "../../assets/availableList.js";
 import { AppContext } from '../Context.jsx';
 import "./BusList.css";
 const BusList = () => {
-
+  const navigate=useNavigate();
   const { init, timeD, destination, setBusId } = useContext(AppContext);
-
+function nextHandler(){
+  
+  navigate("/fill");
+}
+function backHandler()
+{
+  navigate("/");
+}
   function handleBusId(e) {
     setBusId(e);
   }
   function callTwoFunctions(e) {
     handleBusId(e);
+    nextHandler();
   }
 
   return (
@@ -22,18 +31,17 @@ const BusList = () => {
           {busObj.map((bus, index) => (
             <div key={index} className="available-bus-card" onClick={() => callTwoFunctions(bus.Id)}>
               <div className="busImg-div"><img src={bus.img} alt={`${bus.name}`} /></div>
-              <div>
-                <p>Name: {bus.name}</p>
-                <p>Plate Number: {bus.plate_no}</p>
-                <p>Location: {init}</p>
-                <p>Destination: {destination}</p>
-                <p>Date: {timeD}</p>
+              <div className="discription">
+                <p>Name: <span className="detail-span">{bus.name}</span></p>
+                <p>Departure: <span className="detail-span">{init}</span></p>
+                <p>Destination: <span className="detail-span">{destination}</span></p>
+                <p>Date:<span className="detail-span">{timeD}</span></p>
               </div>
             </div>
           ))}
         </div>
         <div className="NavigationButton">
-          <button className="prev-btn"><i className="bi bi-arrow-left-short"></i>Back</button>
+          <button className="prev-btn" onClick={backHandler}><i className="bi bi-arrow-left-short"></i>Back</button>
         </div>
       </div>
     </div>

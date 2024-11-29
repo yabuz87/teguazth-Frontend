@@ -20,21 +20,20 @@ function App() {
             htmlElement.classList.remove('dark-mode');
         }
     }, [darkMode]);
-
     return (
         <AppProvider>
-        {/* <Router> */}
-            <div className={darkMode ? "dark-mode" : "light-mode"} style={{ minHeight: '100vh' }}>
+        <Router>
+        
+            <div className={darkMode ? "dark-mode" : "light-mode" } style={{ minHeight: '100vh' }}>
                 <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
-                <HomePage/>
-                {/* <Routes>
+                <Routes>
                     <Route path="/" element={<HomePage/>}/>
                     <Route path="/avail" element={<BusList/>}/>
                     <Route path="/fill" element={<FillForm/>}/>
-                </Routes> */}
+                </Routes>
                 
             </div>
-            {/* </Router> */}
+            </Router>
         </AppProvider>
     );
 }

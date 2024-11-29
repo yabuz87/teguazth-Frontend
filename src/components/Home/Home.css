@@ -17,7 +17,7 @@
     align-items:center;
     justify-content:start;
     margin-left:20px;
-    padding:30px;
+    padding:10px;
     border:1px solid white;
     border-radius:20px;
     box-shadow: 0 4px 8px 2px rgba(0, 0, 0, 0.3);
@@ -26,12 +26,14 @@
 .left-side,.right-side,.date-departure
 {
     display:flex; 
-    justify-content:flex-start;
+    gap:0;
+    margin:0px;
+    justify-content:space-between;
     flex-direction: column;
 
 }
 .img-right-side{
-    width:300px;
+    width:600px;
 }
 .date-departure{
     display:flex;
@@ -48,34 +50,24 @@
     color:black; 
     padding:10px;
 }
-.left-side select:focus, select:hover
- {
-     background-color: white; 
-     border:none;
-     transition:0.3s;
-}
-
 .container
 {
-    display: grid;
-    gap:20px;
-    justify-content: space-around;
-    align-items: start;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    gap:10px;
+    justify-content:center;
+    align-items:center;
 }
-.input-container {
-    position: relative;
-    color:#100f0f;
-  }
-  
-  
-  
   /* Ensure the container has proper styling */
 .selected-places {
     margin-top: 20px; /* Add some margin if needed */
     padding: 10px; 
   }
   
+  .right-side{
+    width:100%;
+    align-items: start;
+
+  }
   /* General input styling */
   .selected-places input {
     width: 100%; /* Ensure the input takes full width */
@@ -87,7 +79,7 @@
 .info-from-selection
 {
     display:flex;
-    gap:50px;
+    gap:20px;
     margin-top:50px;
 
 }
@@ -96,12 +88,11 @@
 {
     display: flex;
     flex-direction: column;
-    /* margin-top:30px; */
     align-items:start;
 }
 .date-departure input
 {
-    width:200px;
+    width:100%;
     border-radius:8px;
     padding:6px;
     border:1px solid white;
@@ -135,6 +126,7 @@
     .container{
         display:flex;
         flex-direction: column;
+        align-items: start;
     }
     .form-input{
         display:flex;
@@ -142,14 +134,10 @@
     }
     .main-container
     {
-       display:flex;  
-       padding:30px;
+       display:flex; 
+       padding:10px;
        margin:70px 20px;
 
-    }
-    .right-side{
-        display:flex;
-        flex-direction: column;
     }
     .info-from-selection{
         display:flex;

@@ -1,12 +1,25 @@
 import React, { useContext,useState} from 'react';
 import { AppContext, AppProvider } from '../Context.jsx';
+import { useNavigate } from 'react-router-dom';
 import {city} from '../../assets/city.js';
 import './Home.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import busImage from "../../assets/busimg.jpg";
 const Home = () => {
+  const navigate=useNavigate();
+  
   const {init,setInit,timeD,setTime,destination,setDestination}=useContext(AppContext);
+  function handleNavigate()
+  {
+    if(init==="" || timeD==="" || destination==="")
+    {
+      alert("please fill  all !");
+
+    }
+    else {navigate("/avail");}
+    
+  }
   const handleInit = (e) => {
     setInit(e.target.value);
   };
@@ -27,21 +40,25 @@ const Home = () => {
         <div className="container">
           <div className="left-side">
             <div>from</div>
+            <div>
             <select onChange={(e)=>handleInit(e)}>
               <option value="">Select city</option> {/* Add value attribute to option */}
               {city.map((item, index) => (
                 <option key={index} value={item.name}>{item.name}</option>
               ))}
             </select>
+            </div>
           </div>
           <div className="right-side">
             <div>to</div>
+            <div>
             <select onChange={(e)=>handleDestination(e)}>
               <option value="">Select city</option> {/* Add value attribute to option */}
               {city.map((item, index) => (
                 <option key={index} value={item.name}>{item.name}</option>
               ))}
             </select>
+            </div>
           </div>
           <div className="date-departure">
             <label> Departure Date:</label>
@@ -64,7 +81,7 @@ const Home = () => {
           </div>
         </div>
 
-        <button className="next-btn">
+        <button className="next-btn" onClick={handleNavigate}>
           Next <i className="bi bi-arrow-right-short"></i>
         </button>
       </div>
