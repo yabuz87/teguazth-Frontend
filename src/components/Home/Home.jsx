@@ -88,7 +88,7 @@ const Home = () => {
       <div className="right-section">
         {/* <h1>this is the right section</h1> */}
         <h1>ticketing website</h1>
-        <p>in which you can get any Bus Ticket you want to make your journey</p>
+        <p>this is a ticket website in which you can book your bus anywhere by just paying  with diferent options</p>
       </div>
     </div>
   );
