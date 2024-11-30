@@ -26,8 +26,9 @@ function Navbar({ darkMode, setDarkMode }) {
       <img src="" alt="Logo here" />
       <ul className="menu-options" style={{ right: menuPosition }}>
         <li>Login</li>
+        <li>Other Apps & Webs</li>
         <li>About us</li>
-        <li>Something</li>
+        <li>Blogs</li>
       </ul>
       <div  className="right-head" style={{ right: menuPosition }}>
         <i className="bi bi-moon dark-icon" onClick={toggleChange}></i>

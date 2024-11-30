@@ -1,29 +1,121 @@
 
+/* Navbar.css */
+
+/* Navbar.css */
+
 .menu {
-    display: flex;
-    height:70px;
-    align-items: center;
-    justify-content: space-between;
-    position: fixed;
-    top: 0;
-    right:0;
-    left:0;
-    width:100%;
-    z-index:10;
-    background-color: var(--background-color); 
-    color: var(--text-color); transition: background-color 0.3s, color 0.3s;
-    padding:15px 70px; 
-    box-shadow: 0 2px 0px 0px rgba(0, 0, 0, 0.1);
-  }
+  display: flex;
+  height: 70px;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  padding: 15px 70px;
+  box-shadow: 0 2px 0px 0px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff; /* Default background color */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.menu-options {
+  position: fixed;
+  top: 0;
+  right: -320px;  /* Start off-screen */
+  width: 300px;
+  height: 100%;
+  background-color: #fff;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+  transition: right 0.3s ease;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.menu-icon {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+}
+
+.dark_back {
+  background-color: #333333; /* Dark background color */
+  color: #ffffff; /* Dark text color */
+}
+
+.white_back {
+  background-color: #ffffff; /* Light background color */
+  color: #000000; /* Light text color */
+}
+
+.right-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.menu-close-icon {
+  cursor: pointer;
+}
+
+.menu-open-icon {
+  cursor: pointer;
+}
+
+
+.menu-options {
+  position: fixed;
+  top: 0;
+  right: -320px;  /* Start off-screen */
+  width: 300px;
+  height: 100%;
+  background-color: #fff;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+  transition: right 0.3s ease;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.menu-icon {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+}
+
+.dark_back {
+  --background-color: #333;
+  --text-color: #fff;
+}
+
+.white_back {
+  --background-color: #fff;
+  --text-color: #000;
+}
+
+.right-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.menu-close-icon {
+  cursor: pointer;
+}
+
+.menu-open-icon {
+  cursor: pointer;
+}
+
 
   #white_back
   {
-    background:white;
+    background-color:white;
     color:black;
   }
   #dark_back
   {
-    background:black;
+    background-color:black;
     color:white;
   }
   .dark-icon
