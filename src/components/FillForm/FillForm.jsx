@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext,useState,useEffect} from 'react';
 import { AppContext } from '../Context';
 import { useNavigate } from 'react-router-dom';
 import { busObj } from '../../assets/availableList.js';
@@ -13,11 +13,17 @@ const FillForm = () => {
   {
     navigate("/avail");
   }
-  const {init, timeD, destination, busId } = useContext(AppContext);
+  const {init, timeD, destination, busId} = useContext(AppContext);
 
-  // Find the selected bus based on busId
-  const selectedBus = busObj.find(item => busId === item.Id);
+  const [fullName,setFullName]=useState();
+  const [timeOfDepatrue,setTimeOfDep]=useState();
+  const [phone,setPhone]=useState();
+  const [Fermata,setFermata]=useState();
+  
 
+
+
+const selectedBus=busObj.map(item=>busId===item.id);
   return (
     <div className="page-container">
       <div className="FillForm-container">
