@@ -80,6 +80,10 @@ input, select{
     
     .right-side{
         justify-content: center;
+        gap:10px;
+    }
+    .right-side h1{
+        text-align: center;
     }
     .back-navigation button{
         padding:5px 3px;

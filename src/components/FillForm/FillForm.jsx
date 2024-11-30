@@ -36,11 +36,12 @@ const selectedBus=busObj.map(item=>busId===item.id);
           <p>Destination: {destination}</p>
           <p>Bus Id: {busId}</p>
       </div>
-        <label>Full Name:</label>
+        <div><label>Full Name:</label>
         <input type="text" placeholder="e.g. abc cde"/>
-        <label>Phone Number:</label>
-        <input type="text"></input>
-        <label></label>
+        </div>
+       <div> <label>Phone Number:</label>
+       <input type="text"></input>
+       </div>
         <div>
         <label>time of Depature</label>
         <select>
@@ -55,6 +56,7 @@ const selectedBus=busObj.map(item=>busId===item.id);
         <input type="text"/>
         </div>
         <div>
+        <label>Fermata:</label>
         <select>
         <option>select Fermata</option>
           {Fermatas(init).map((item, index) => (
