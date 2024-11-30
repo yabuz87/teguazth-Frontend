@@ -34,9 +34,9 @@
 {
     display:flex;
     justify-content: center;
-    gap:50px;
+    gap:30px;
 }
-.submit-btn:hover
+.submit-btn:hover 
 {
     background:rgb(18, 133, 215);
     color:white;
@@ -74,11 +74,16 @@ input, select{
         flex-direction: column;
         
     }
-    .left-side{
+    .left-side p, .left-side img{
         display:none;
     }
+    
     .right-side{
         justify-content: center;
-
     }
+    .back-navigation button{
+        padding:5px 3px;
+    }
+    
+
 }
