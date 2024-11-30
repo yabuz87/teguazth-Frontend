@@ -23,16 +23,25 @@ const FillForm = () => {
       <div className="FillForm-container">
     <div className="right-side">
       <h1>Form</h1>
-      <div><p>Departure Time: {timeD}</p>
+      <div>
+
+          <p>Bus Name:  <span className="bus-name">{ selectedBus==null ? "" :selectedBus.name}</span></p>
+          <p>Departure Time: {timeD}</p>
           <p>Destination: {destination}</p>
-          <p>Bus ID: {busId}</p>
+          <p>Bus Id: {busId}</p>
       </div>
         <label>Full Name:</label>
         <input type="text" placeholder="e.g. abc cde"/>
         <label>Phone Number:</label>
         <input type="text"></input>
-        <label>Number of Passengers:</label>
-        <input type="number"/>
+        <label></label>
+        <label>time of Depature</label>
+        <select>
+          <option value="1">select time</option>
+          <option value="2">Morning 12:30 LT</option>
+          <option value="3">Morning  4:30 LT</option>
+          <option value="4">Mid Day  6:00 LT</option>
+        </select>
         <label>Special Requests:</label>
         <input type="text"/>
         <select>
