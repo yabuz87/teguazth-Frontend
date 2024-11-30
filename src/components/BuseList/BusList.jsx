@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import { busObj } from "../../assets/availableList.js";
 import { AppContext } from '../Context.jsx';
 import "./BusList.css";
+import Footer from '../footer/Footer.jsx';
 const BusList = () => {
   const navigate=useNavigate();
   const { init, timeD, destination, setBusId } = useContext(AppContext);
@@ -24,6 +25,7 @@ function backHandler()
   }
 
   return (
+    <div>
     <div className="available-bus">
       <div>
         <h1>Available Buses</h1>
@@ -44,6 +46,8 @@ function backHandler()
           <button className="prev-btn" onClick={backHandler}><i className="bi bi-arrow-left-short"></i>Back</button>
         </div>
       </div>
+    </div>
+    <Footer/>
     </div>
   );
 }

@@ -3,7 +3,7 @@ import { AppContext } from '../Context';
 import { useNavigate } from 'react-router-dom';
 import { busObj } from '../../assets/availableList.js';
 import 'bootstrap-icons/font/bootstrap-icons.css';
-
+import Footer from "../footer/Footer.jsx"
 import { Fermatas } from "../../assets/fermatas"; // Ensure correct import
 import './FillForm.css';
 
@@ -19,7 +19,7 @@ const FillForm = () => {
   const [timeOfDepatrue,setTimeOfDep]=useState();
   const [phone,setPhone]=useState();
   const [Fermata,setFermata]=useState();
-  
+
 
 
 
@@ -79,7 +79,9 @@ const selectedBus=busObj.map(item=>busId===item.id);
           {}
       </div>
     </div>
+    <Footer/>
     </div>
+    
   );
 };
 
