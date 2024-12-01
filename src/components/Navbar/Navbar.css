@@ -158,7 +158,7 @@ ul li
       background-color:whitesmoke;
       margin-top:8px;
       flex-direction:column;
-      align-items:start;
+      align-items:center;
       top:0;
       right:-320px;
       gap:30px;
@@ -167,6 +167,7 @@ ul li
       transition:right 0.3s;
       z-index:2;
   }
+
   li
   {
       font-size:30px;
@@ -174,7 +175,13 @@ ul li
       flex-direction:row;
       color:black;
       gap:20px;
+      transition:0.3s;
       
+  }
+  li:hover{
+    transition:0.3s;
+    transform:scale(1.05);
+    cursor:pointer;
   }
   .menu-open-icon{
     display:block;

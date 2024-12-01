@@ -18,6 +18,8 @@ const FillForm = () => {
   const [fullName,setFullName]=useState();
   const [timeOfDepatrue,setTimeOfDep]=useState();
   const [phone,setPhone]=useState();
+  const [sBus,setSeletcedBus]=useState();
+  
   const [Fermata,setFermata]=useState();
 
 
@@ -27,11 +29,10 @@ const selectedBus=busObj.map(item=>busId===item.id);
   return (
     <div className="page-container">
       <div className="FillForm-container">
-    <div className="right-side">
-      <h1>Form</h1>
-      <div>
+    <div className="right-section">
 
-          <p>Bus Name:  <span className="bus-name">{ selectedBus==null ? "" :selectedBus.name}</span></p>
+      <div>
+          <p>Bus Name:  <span className="bus-name">{ selectedBus===null ? "no Bus" :selectedBus.name}</span></p>
           <p>Departure Time: {timeD}</p>
           <p>Destination: {destination}</p>
           <p>Bus Id: {busId}</p>
