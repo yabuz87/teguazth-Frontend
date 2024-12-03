@@ -69,6 +69,9 @@ h1{
         justify-content: center;
         gap:10px;
 }
+.available-bus-card img{
+    width:140px;
+}
 .discription p{
     font-size: 15px;
 }
