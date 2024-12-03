@@ -25,26 +25,36 @@ const FillForm = () => {
 
 
 
-const selectedBus=busObj.map(item=>busId===item.id);
+const selectedBus=busObj.map(item=>busId===item.Id);
   return (
     <div className="page-container">
       <div className="FillForm-container">
-    <div className="right-section">
+    <div className="form-section">
+    <div>
+    <h1>Booking Form</h1>
+    <p>To reserve seats please complete and submit the booking Form</p>
+    <hr/>
+      
 
-      <div>
-          <p>Bus Name:  <span className="bus-name">{ selectedBus===null ? "no Bus" :selectedBus.name}</span></p>
-          <p>Departure Time: {timeD}</p>
-          <p>Destination: {destination}</p>
-          <p>Bus Id: {busId}</p>
-      </div>
-        <div><label>Full Name:</label>
+        <div className="name-section">
+        <h4>Name</h4>
+        <div className="name">
+        <div><label style={{display:"block",margin:"5px"}}>First Name:</label>
         <input type="text" placeholder="e.g. abc cde"/>
         </div>
-       <div> <label>Phone Number:</label>
-       <input type="text"></input>
+        <div><label style={{display:"block",margin:"5px"}}>Last Name:</label>
+        <input type="text" placeholder="e.g. abc cde"/>
+        </div>
+        </div>
+        </div>
+       <div> <h4 style={{margin:"10px 0px"}}>Phone Number:</h4>
+       <input type="text" placeholder='+251'></input>
        </div>
+        <div className="departure-info">
+        <h4 style={{margin:"10px 0px"}}>Departure Information</h4>
+        <div className="time-and-pickup">
         <div>
-        <label>time of Depature</label>
+        <label style={{display:"block",margin:"5px"}}>Depature Time: </label>
         <select>
           <option value="1">select time</option>
           <option value="2">Morning 12:30 LT</option>
@@ -53,41 +63,39 @@ const selectedBus=busObj.map(item=>busId===item.id);
         </select>
         </div>
         <div>
-        <label>Special Requests:</label>
-        <input type="text"/>
-        </div>
-        <div>
-        <label>Fermata:</label>
+        <label style={{display:"block",margin:"5px"}}>pickup Adress:</label>
         <select>
         <option>select Fermata</option>
-          {Fermatas(init).map((item, index) => (
-            <option key={index} value={item}>{item}</option>
+          { Fermatas(init).map((item, index) => (
+           <>
+           <option key={index} value={item}>{item}</option>
+            </>
           ))}
         </select>
         </div>
-      </div>
-      {selectedBus ? (
-        <div  className="left-side" key={selectedBus.Id}>
-          <h1>{selectedBus.name}</h1>
-          <p><span>Hi there,</span> Welcome to {selectedBus.name}! We are thrilled to have you onboard. We aim to provide you with everything you desire and deserve during your journey, including free Wi-Fi, breakfast, entertainment, and safe sites. All these amenities are available for just 750 ETB. Your safety and happiness are our top priorities.</p>
-          <img src={selectedBus.img} alt={selectedBus.name} />
-          
         </div>
-      ) : (
-        <p>No bus selected</p>
-      )}
-      
+
+        </div>
+        <div>
+        <h4 style={{margin:"10px 0px"}}>Special Requests:</h4>
+        <textarea style={{width:"350px",height:"90px"}} type="text"/>
+        </div>
+    </div>
+    <div  className="pay-option">
+      <h1>Payment Options</h1>
+      <p>you can pay your payment in one of your choice below</p>
+      <hr></hr>
+      <div className="img-container">
+          {}
+      </div>
+    </div>
+      </div>
       <div className="back-navigation">
        <button className="back-btn" onClick={backHandler}><i className="bi bi-arrow-left-short"></i>Back</button>
        <button className="submit-btn">Submit</button>
       </div>
     </div>
-    <div  className="pay-option">
-      <h1>Payment Options</h1>
-      <div className="img-container">
-          {}
-      </div>
-    </div>
+    
     <Footer/>
     </div>
     
@@ -95,3 +103,21 @@ const selectedBus=busObj.map(item=>busId===item.id);
 };
 
 export default FillForm;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    

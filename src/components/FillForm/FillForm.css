@@ -1,31 +1,32 @@
 .page-container{
  margin:75px 180px;
 }
-.FillForm-container
-{
+.form-section{
     display:grid;
     grid-template-columns: 1fr 1fr;
-    gap:20px;
-    
-}
+    gap:10px;
 
-.left-side img
-{
-   width:400px;
 }
-
-.left-side h1
-{
-    font-weight: 700;
-}
-.right-section
-{
+.name-section,.departure-info{
     display:flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap:20px;
-    margin-left:30px;
+}
+.name,.time-and-pickup{
+    display:flex;
+    gap:25px;
+}
+
+.selected-info{
+    padding:10px;
+    transition:0.3s;
+    border-radius: 30px;
+    margin:10px;
+    display:flex;
+    flex-direction: column;
+}
+.selected-info:hover{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition:0.3s;
 }
 .back-navigation
 {
@@ -48,13 +49,7 @@
     display:block;
     /* width:100%; */
 }
-.FillForm-container p{
-    font-size: 20px;
-    font-weight: 400;
-}
-.bus-name{
-    color:rgb(13, 31, 26);
-}
+
 .back-navigation button, .submit-btn
 {
     padding:10px;
@@ -79,10 +74,9 @@
         display:none;
     }
     
-    .right-section{
-        justify-content: center;
+    .form-section{
+        display: flex;
         flex-direction: column;
-        gap:20px;
     }
     .back-navigation button{
         padding:5px 3px;
