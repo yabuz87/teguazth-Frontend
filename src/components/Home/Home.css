@@ -2,9 +2,12 @@
 {
     display:grid;
     grid-template-columns: 1fr 1fr;
+    overflow:hidden;
+    max-width: 100%;
     align-items:center;
     margin-top:80px;
     gap:20px;
+    
     justify-content: center;
 }
 
@@ -26,6 +29,8 @@
 .left-side,.right-side,.date-departure
 {
     display:flex; 
+    flex-wrap:wrap;
+    max-width: 100%;
     gap:0;
     margin:0px;
     justify-content:space-between;
@@ -56,6 +61,16 @@
     gap:10px;
     justify-content:center;
     align-items:center;
+}
+.payment-method-container{
+    display:flex;
+    gap:10px;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    justify-content: center;
+    align-items: center;
+}
+.payment-card img{
+        width:200px;
 }
   /* Ensure the container has proper styling */
 .selected-places {
@@ -128,10 +143,17 @@
         flex-direction: column;
         align-items: start;
     }
+    .payment-card img{
+        width:95px;
+}
+    .payment-method-container
+    {
+            flex-wrap: wrap;
+    }
+
     .form-input{
         display:flex;
-        /* flex-wrap: wrap; */
-    }
+      }
     .main-container
     {
        display:flex; 

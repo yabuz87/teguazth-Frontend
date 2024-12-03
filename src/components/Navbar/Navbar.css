@@ -156,7 +156,7 @@ ul li
   .menu ul {
       position:fixed;
       background-color:whitesmoke;
-      margin-top:8px;
+      /* margin-top:8px; */
       flex-direction:column;
       align-items:center;
       top:0;
@@ -167,6 +167,7 @@ ul li
       transition:right 0.3s;
       z-index:2;
   }
+
 
   li
   {

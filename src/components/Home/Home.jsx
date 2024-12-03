@@ -6,6 +6,8 @@ import './Home.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import busImage from "../../assets/busimg.jpg";
+import {pay} from "../../assets/paymentImage.js";
+import  Carousel from "../Partner/Carousel";
 const Home = () => {
   const navigate=useNavigate();
   
@@ -33,6 +35,7 @@ const Home = () => {
   };
 
   return (
+    <>
     <div className="main-container">
       <div className="form-input">
         <h1>Book Now!</h1>
@@ -87,10 +90,29 @@ const Home = () => {
       </div>
       <div className="right-section">
         {/* <h1>this is the right section</h1> */}
-        <h1>ticketing website</h1>
-        <p>this is a ticket website in which you can book your bus anywhere by just paying  with diferent options</p>
+        <h1>Ticketing website</h1>
+        <p>Our ticketing website makes booking your bus journey a breeze! With seamless payment options and destinations across the map, your next trip is just a click away. Book now and travel with ease! 🌍✨</p>
+        </div>
+    </div>
+    <div>
+    <Carousel/>
+      
+      <div className="">
+      <h1>Multiple Payment Options</h1>
+      <div className="payment-method-container">
+        {
+          pay.map((item,index)=>
+          {
+            return(
+              <div className="payment-card" key={index}>
+              <img src={item.img}></img>
+              </div>
+            )})
+        }
+      </div>
       </div>
     </div>
+    </>
   );
 };
 

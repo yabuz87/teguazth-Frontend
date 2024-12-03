@@ -13,7 +13,7 @@
 .carousel-wrapper {
     display: flex;
     width: max-content;
-    animation: move 20s linear infinite;
+    animation: move 15s linear infinite;
     
 }
 
