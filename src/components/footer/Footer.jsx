@@ -6,8 +6,8 @@ function Footer() {
     <div className="footer-container">
     <hr></hr>
     <div className="contact">
-        <h2 className="text-center">Contact us</h2>
-        <p className="text-center">you can contact us to learn more and give any feedback by the following social media links and email</p>
+        <h2 className="h1-text">Contact us</h2>
+        <p className="p-text">you can contact us to learn more and give any feedback by the following social media links and email</p>
         <div className="social-medias">
             <p><i className="bi bi-instagram"></i>
             </p>

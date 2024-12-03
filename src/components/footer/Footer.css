@@ -22,6 +22,9 @@
     cursor: pointer;
     transition:0.3s;
 }
+.h1-text,.p-text{
+    text-align: center;
+}
 .social-medias p:hover{
     transform: scale(1.04);
     transition:0.3s;  
@@ -32,10 +35,14 @@
 }
 @media(max-width:768px)
 {
-    .footer,.contact{
+    .footer{
         flex-direction: column;
-        padding:50px;
+        padding:5px;
         gap:10px;
+    }
+    .contact{
+        display:flex;
+        justify-content:start;
     }
 
 }
