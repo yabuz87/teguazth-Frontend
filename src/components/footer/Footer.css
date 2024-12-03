@@ -32,7 +32,7 @@
 }
 @media(max-width:768px)
 {
-    .footer-container{
+    .footer,.contact{
         flex-direction: column;
         gap:10px;
     }
