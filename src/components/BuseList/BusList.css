@@ -69,4 +69,7 @@ h1{
         justify-content: center;
         gap:10px;
 }
+.discription p{
+    font-size: 15px;
+}
 }
