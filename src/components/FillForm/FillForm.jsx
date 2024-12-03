@@ -48,7 +48,7 @@ const selectedBus=busObj.map(item=>busId===item.Id);
         </div>
         </div>
        <div> <h4 style={{margin:"10px 0px"}}>Phone Number:</h4>
-       <input type="text" placeholder='+251'></input>
+       <input type="text" style={{width:"300px"}} placeholder='+251'></input>
        </div>
         <div className="departure-info">
         <h4 style={{margin:"10px 0px"}}>Departure Information</h4>
