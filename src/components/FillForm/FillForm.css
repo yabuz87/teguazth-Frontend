@@ -15,6 +15,9 @@
     display:flex;
     gap:20px;
 }
+.phoneNo-input{
+    width:300px;
+}
 .form-section label{
     font-size: 16px;
     font-weight:450;
@@ -102,6 +105,12 @@
     .page-container{
         margin:70px 40px;
        }
-    
+       .name,.time-and-pickup{
+        flex-direction: column;
+       }
+    .phoneNo-input
+    {
+        width:100%;
+    }
 
-}
+}om
