@@ -5,6 +5,7 @@ import { busObj } from '../../assets/availableList.js';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import Footer from "../footer/Footer.jsx"
 import { Fermatas } from "../../assets/fermatas"; // Ensure correct import
+import {pay} from "../../assets/paymentImage"
 import './FillForm.css';
 
 const FillForm = () => {
@@ -35,7 +36,10 @@ const selectedBus=busObj.map(item=>busId===item.Id);
     <p>To reserve seats please complete and submit the booking Form</p>
     <hr/>
       
-
+        <div style={{marginLeft:"3px"}}>
+        <label style={{display:"block",margin:"5px 0px"}}>Number Of Passenger: </label>
+          <input style={{width:"150px"}} type="text"></input>
+        </div>
         <div className="name-section">
         <h4>Name</h4>
         <div className="name">
@@ -85,8 +89,15 @@ const selectedBus=busObj.map(item=>busId===item.Id);
       <h1>Payment Options</h1>
       <p>you can pay your payment in one of your choice below</p>
       <hr></hr>
-      <div className="img-container">
-          {}
+      <div className="pay-img-container">
+      {
+        pay.map((item,index)=>{
+          return(<div key={index}>
+            <img src={item.img} alt="PayPal"/>
+         </div>)
+        })
+          
+      }
       </div>
     </div>
       </div>

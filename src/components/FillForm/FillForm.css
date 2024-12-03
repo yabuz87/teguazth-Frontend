@@ -53,9 +53,20 @@
     line-height: 10px;
     padding:7px;
     width:100%;
-    /* display:block; */
 }
 
+.pay-img-container{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap:10px;
+    cursor:pointer;
+    justify-content:space-around;
+}
+.pay-img-container img{
+    width:200px;
+    /* style={{width:"200px"}} */
+}
 .back-navigation button, .submit-btn
 {
     padding:10px;
@@ -76,17 +87,17 @@
         gap:20px;
         
     }
-    .left-side p,.left-side img{
-        display:none;
-    }
-    
     .form-section{
         display: flex;
         flex-direction: column;
+        gap:30px;
     }
     .back-navigation button{
         padding:5px 3px;
         margin-bottom:50px;
+    }
+    .pay-img-container img{
+        width:120px;
     }
     
 
