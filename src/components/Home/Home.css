@@ -14,6 +14,7 @@
 .form-input
 {
     display:flex;
+    flex-wrap: wrap;
     position:relative;
     background: linear-gradient(rgb(74, 163, 177), rgb(236, 176, 64) 90%);
     flex-direction:column;

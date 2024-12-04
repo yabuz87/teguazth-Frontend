@@ -22,9 +22,9 @@ function Navbar({ darkMode, setDarkMode }) {
   const op2 = 'white_back';
 
   return (
-    <div className={`menu ${darkMode ? op1 : op2}`}>
+    <div className={`menu ${darkMode ? op1 : op2} menu-container`}>
       <img src="" alt="Logo here" />
-      <ul className="menu-options" style={{ right: menuPosition }}>
+      <ul className={`menu-options`} style={{ right: menuPosition }}>
         <li>Login</li>
         <li>Other Apps & Webs</li>
         <li>About us</li>
@@ -38,8 +38,8 @@ function Navbar({ darkMode, setDarkMode }) {
         <i className="bi bi-x menu-close-icon" onClick={closeMenu}></i>
       )}
       {menuPosition !== '0px' && (
-        <img className="menu-open-icon" onClick={openMenu} src={menuIcon} alt="Menu Icon" />
-      )}
+        <i className={`bi bi-list menu-open-icon`} onClick={openMenu}></i>
+       )}
     </div>
   );
 }

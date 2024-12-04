@@ -12,6 +12,7 @@
 /* Cards wrapper */
 .carousel-wrapper {
     display: flex;
+    flex-wrap: wrap;
     width: max-content;
     animation: move 15s linear infinite;
     

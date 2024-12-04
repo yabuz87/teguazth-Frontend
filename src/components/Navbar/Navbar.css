@@ -110,12 +110,11 @@
 
   #white_back
   {
-    background-color:white;
+    /* background-color:white; */
     color:black;
   }
   #dark_back
   {
-    background-color:black;
     color:white;
   }
   .dark-icon
@@ -132,7 +131,7 @@ ul li
     display:flex;
     
     list-style: none;
-    font-size:20px;
+    font-size:18px;
 }
 .right-head
 {
@@ -150,6 +149,7 @@ ul li
   display: none;
   color:black;
   width:30px;
+ transition:0.3s
 }
 @media(max-width:768px)
 {
@@ -157,25 +157,25 @@ ul li
       position:fixed;
       background-color:whitesmoke;
       flex-direction:column;
+      justify-content: flex-start;
       align-items:center;
       top:0;
-      right:-250px;
-      gap:30px;
-      width:280px;
+      gap:15px;
+      width:180px;
       height:100%;
       transition:right 0.3s;
       z-index:2;
+      padding-top:70px;
   }
 
 
-  li
-  {
-      font-size:30px;
-      padding-left:100px;
+ ul li{
+
+      font-size:15px;
       flex-direction:row;
       color:black;
       gap:20px;
-      transition:0.3s;
+      transition:0.5s;
       
   }
   li:hover{
@@ -187,21 +187,20 @@ ul li
     display:block;
     position:relative;
     right:-30px;
+    font-size:32px;
     cursor:pointer;
   }
   .menu-close-icon
   {
+
     display:block;
     position:relative;
-    top:-10px;
+    top:-15px;
+    /* box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2); */
+    /* border-radius: 20px; */
     z-index:2;
-    left:50px;
-    right:15px;
-    width:20px;
+    left:60px;
+    /* width:25px; */
     font-size:30px
   }
-  /* .right-head{
-    display:flex;
-    flex-direction: column;
-  } */
 }
