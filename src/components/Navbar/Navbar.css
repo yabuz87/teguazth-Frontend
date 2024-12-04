@@ -156,11 +156,10 @@ ul li
   .menu ul {
       position:fixed;
       background-color:whitesmoke;
-      /* margin-top:8px; */
       flex-direction:column;
       align-items:center;
       top:0;
-      right:-320px;
+      right:-250px;
       gap:30px;
       width:280px;
       height:100%;

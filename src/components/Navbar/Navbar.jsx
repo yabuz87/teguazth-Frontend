@@ -1,7 +1,7 @@
-import './Navbar.css';
-import React, { useState } from 'react';
 import 'bootstrap-icons/font/bootstrap-icons.css';
+import React, { useState } from 'react';
 import menuIcon from "../../assets/burger.svg";
+import './Navbar.css';
 
 function Navbar({ darkMode, setDarkMode }) {
   const [menuPosition, setMenuPos] = useState('-320px');
@@ -11,7 +11,7 @@ function Navbar({ darkMode, setDarkMode }) {
   };
 
   const closeMenu = () => {
-    setMenuPos('-320px');
+    setMenuPos('-200px');
   };
 
   const toggleChange = () => {
