@@ -5,6 +5,7 @@
 
 .menu {
   display: flex;
+  flex-wrap: wrap;
   height: 70px;
   align-items: center;
   justify-content: space-between;
@@ -155,6 +156,7 @@ ul li
 {
   .menu ul {
       position:fixed;
+      
       background-color:whitesmoke;
       flex-direction:column;
       justify-content: flex-start;
