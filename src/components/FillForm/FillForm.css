@@ -48,11 +48,13 @@
 .submit-btn{
     background:rgb(18, 133, 215);
     color:white;
+    transition:0.3s;
 }
 .submit-btn:hover 
 {
     background:white;
     color:black;
+    border:solid black 0.5px;
     transition:0.3s;
 }
  .form-section input,.form-section select{
